@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
 }
 
@@ -38,20 +38,51 @@ section {
   margin-bottom: 50px;
 }
 
-.img-home {
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.home-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.img-apresentacao {
   width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 20px auto;
-  border-radius: 8px;
+  max-width: 400px;
+  border-radius: 10px;
 }
 
 .curso {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: #e6ecf0;
   border-left: 6px solid #1f4068;
+  margin-bottom: 20px;
   padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 4px;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.curso:hover {
+  border-color: #1fa2ff;
+}
+
+.curso img {
+  width: 180px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 6px;
+}
+
+.matricula-info {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
 }
 
 form {
