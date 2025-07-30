@@ -28,7 +28,7 @@
             Nosso projeto, o <strong>Future Paranaense</strong>, oferece cursos preparatórios que unem conteúdo de qualidade, organização estratégica e apoio emocional. Sabemos o quanto essa fase exige, por isso, criamos um espaço onde você encontra tudo o que precisa para mandar bem nos vestibulares mais concorridos do estado.
           </p>
         </div>
-        <img src="CPMPR.avif" alt="Equipe estudando" class="img-apresentacao">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Equipe estudando" class="img-apresentacao">
       </div>
     </section>
 
@@ -36,7 +36,7 @@
       <h2>Nossos Cursos</h2>
       
       <div class="curso">
-        <img src="UFPR.webp" alt="UFPR" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/UFPR_-_Setor_de_Ci%C3%AAncias_Jur%C3%ADdicas.jpg/640px-UFPR_-_Setor_de_Ci%C3%AAncias_Jur%C3%ADdicas.jpg" alt="UFPR" />
         <div>
           <h3>FUTURE UFPR</h3>
           <p>Curso completo com foco total no vestibular da UFPR: simulados personalizados, interpretação de questões discursivas, redação nota 1000 e acompanhamento constante para cada fase do processo.</p>
@@ -44,7 +44,7 @@
       </div>
 
       <div class="curso">
-        <img src="UTFPR.webp" alt="UTFPR" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/UTFPR_-_campus_Curitiba.jpg/640px-UTFPR_-_campus_Curitiba.jpg" alt="UTFPR" />
         <div>
           <h3>FUTURE UTFPR</h3>
           <p>Preparação afiada para o vestibular da UTFPR, com foco em exatas, revisão de base matemática, listas de exercícios comentados, e suporte técnico para dominar o estilo da prova.</p>
@@ -52,7 +52,7 @@
       </div>
 
       <div class="curso">
-        <img src="UEPG.webp" alt="UEPG" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/UEPG_reitoria.jpg/640px-UEPG_reitoria.jpg" alt="UEPG" />
         <div>
           <h3>FUTURE UEPG</h3>
           <p>Curso com metodologia exclusiva para o vestibular da UEPG, com foco em gramática, literatura e biologia. Inclui simulados temáticos e materiais atualizados conforme os editais.</p>
@@ -66,18 +66,20 @@
 
     <section id="contato">
       <h2>Entre em Contato</h2>
-      <form id="formulario">
+      <form action="https://formsubmit.co/ricardo.marcato@escola.pr.gov.br" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://example.com/obrigado.html">
+
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" required>
+        <input type="text" id="nome" name="nome" required>
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email" required>
+        <input type="email" id="email" name="email" required>
 
         <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" required></textarea>
+        <textarea id="mensagem" name="mensagem" required></textarea>
 
         <button type="submit">Enviar</button>
-        <p id="mensagem-status"></p>
       </form>
     </section>
   </main>
@@ -85,8 +87,5 @@
   <footer>
     <p>&copy; 2025 Future Paranaense. Todos os direitos reservados.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
-
